@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorVar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="brl-y1-bKd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-nW-VyP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                        <color key="backgroundColor" red="0.91498154401779175" green="0.37833490967750549" blue="0.73496383428573608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-1h-x0Z">
+                                        <rect key="frame" x="0.0" y="93.5" width="375" height="85.5"/>
+                                        <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-MV-t8G">
+                                        <rect key="frame" x="0.0" y="187" width="375" height="85.5"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.46666666670000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDN-uE-0mb">
+                                        <rect key="frame" x="0.0" y="280.5" width="375" height="86"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-rL-S8c">
+                                        <rect key="frame" x="0.0" y="374.5" width="375" height="85.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-Ty-qjK">
+                                        <rect key="frame" x="0.0" y="468" width="375" height="85.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-Pz-SlK">
+                                        <rect key="frame" x="0.0" y="561.5" width="375" height="85.5"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666668650000005" blue="0.66666668650000005" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e28-P8-jXA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e28-P8-jXA" secondAttribute="trailing" id="DTS-Fn-zFO"/>
+                            <constraint firstItem="e28-P8-jXA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GJC-Uc-4k7"/>
+                            <constraint firstItem="brl-y1-bKd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y5h-dP-qLc"/>
+                            <constraint firstItem="e28-P8-jXA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZuC-qq-NH4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e28-P8-jXA" secondAttribute="bottom" id="iJI-IV-hZf"/>
+                            <constraint firstItem="brl-y1-bKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mRf-rV-F8X"/>
+                            <constraint firstItem="brl-y1-bKd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="prT-4Z-CAf"/>
+                            <constraint firstAttribute="bottom" secondItem="brl-y1-bKd" secondAttribute="bottom" id="rWf-jU-6oi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="newView" destination="e28-P8-jXA" id="66a-FN-S5f"/>
+                        <outlet property="view1" destination="ohg-nW-VyP" id="hCO-f6-QjA"/>
+                        <outlet property="view2" destination="kaw-1h-x0Z" id="xJ0-LO-NCa"/>
+                        <outlet property="view3" destination="DK8-MV-t8G" id="otU-UH-ATw"/>
+                        <outlet property="view4" destination="SDN-uE-0mb" id="t3e-3C-Lpx"/>
+                        <outlet property="view5" destination="Gp2-rL-S8c" id="ozu-1O-lVg"/>
+                        <outlet property="view6" destination="DFd-Ty-qjK" id="87X-l2-iVh"/>
+                        <outlet property="view7" destination="cKg-Pz-SlK" id="jZR-kD-7RQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
